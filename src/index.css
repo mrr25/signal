@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #050505;
+    --bg-panel: #0A0A0A;
+    --bg-card: #0F0F0F;
+    --border-subtle: #141414;
+    --border-crisp: #1F1F1F;
+    --border-hover: #2E2E2E;
+    --text-primary: #E0E0E0;
+    --text-secondary: #888888;
+    --text-muted: #555555;
+    --accent-green: #00FF94;
+    --accent-red: #FF3131;
+    --accent-amber: #FFB800;
+  }
+
+  body {
+    background-color: #050505;
+    color: #E0E0E0;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Institutional Terminal Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1F1F1F;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+/* Glow effects for institutional badges */
+.glow-green {
+  box-shadow: 0 0 8px #00FF94;
+}
+
+.glow-red {
+  box-shadow: 0 0 8px #FF3131;
+}
+
+.glow-amber {
+  box-shadow: 0 0 8px #FFB800;
+}
